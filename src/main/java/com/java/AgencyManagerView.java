@@ -105,8 +105,4 @@ public class AgencyManagerView extends Application {
         // Code pour afficher ou gérer l'affichage du menu
         System.out.println("Menu Responsable d'Agence affiché !");
     }
-
-    public static void main(String[] args) {
-        launch(args);
-    }
 }

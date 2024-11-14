@@ -37,10 +37,8 @@ public class LoginController {
                     // L'utilisateur est un responsable d'agence
                     Agency agency = dbManager.getAgencyByManagerId(user.getUserId());
                     AgencyManager agencyManager = new AgencyManager(user.getUserId(), user.getEmail(), user.getUserName(), user.getPassword(), user.getBalance(), "responsable_agence", agency);
-                    AgencyManagerView agencyManagerView = new AgencyManagerView(null);  // Initialiser avec un contrôleur nul
-                    AgencyManagerController agencyManagerController = new AgencyManagerController(agencyManager, agencyManagerView);
-                    agencyManagerView.setController(agencyManagerController);  // Passer le contrôleur à la vue
-                    agencyManagerController.showMainMenu();  // Afficher le menu du responsable d'agence
+                    AgencyManagerView agencyManagerView = new AgencyManagerView(new AgencyManagerController(agencyManager, null));
+                    agencyManagerView.start(primaryStage); // Afficher le menu du responsable d'agence
                     break;
 
                 case "client":
