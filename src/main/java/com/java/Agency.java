@@ -48,5 +48,6 @@ public class Agency {
         System.out.println("Emplacement : " + location);
         System.out.println("Numéro de contact : " + contactNumber);
         System.out.println("ID du Responsable : " + managerId);
+        System.out.println("hi bdlt");
     }
 }
