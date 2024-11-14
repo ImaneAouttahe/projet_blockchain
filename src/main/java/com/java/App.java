@@ -23,5 +23,6 @@ public class App extends Application {
 
         // Affiche la fenêtre de login
         loginFrame.show();
+        System.out.println("hi bdlt");
     }
 }
