@@ -7,8 +7,8 @@ import java.util.List;
 import static java.sql.Types.NULL;
 
 public class DatabaseManager {
-    private static final String DB_URL = "jdbc:mysql://192.168.1.45:3306/java"; // Changez le nom de la base de données si nécessaire
-    private static final String USER = "admin"; // Changez l'utilisateur si nécessaire
+    private static final String DB_URL = "jdbc:mysql://25.51.250.189:3306/java"; // Changez le nom de la base de données si nécessaire
+    private static final String USER = "root"; // Changez l'utilisateur si nécessaire
     private static final String PASSWORD = "2004"; // Changez le mot de passe si nécessaire
 
     private Connection connection;
