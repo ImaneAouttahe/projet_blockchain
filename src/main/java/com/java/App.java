@@ -3,6 +3,7 @@ package com.java;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
+
 public class App extends Application {
     private DatabaseManager dbManager;  // Gestion de la base de données
     private LoginController loginController;  // Contrôleur de la connexion
@@ -10,7 +11,6 @@ public class App extends Application {
     public static void main(String[] args) {
         launch(args);  // Lance l'application JavaFX
     }
-
     @Override
     public void start(Stage primaryStage) {
         // Initialisation des composants
