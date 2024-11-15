@@ -86,7 +86,7 @@ public class User {
     public boolean makeTransaction(User toUser, double amount, String signature, String blockchainHash) {
         if (amount <= 0) {
             System.out.println("Le montant de la transaction doit être positif.");
-            System.out.println("njhgdfyuewgftyuewbceygf");
+            //System.out.println("njhgdfyuewgftyuewbceygf");
             return false;
         }
 
