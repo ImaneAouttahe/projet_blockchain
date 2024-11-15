@@ -25,7 +25,6 @@ public class AgencyManagerView extends Application {
     public void start(Stage primaryStage) {
 
         // Initialiser les champs de saisie
-        userIdField = new TextField();
         emailField = new TextField();
         userNameField = new TextField();
         passwordField = new TextField();
@@ -52,7 +51,6 @@ public class AgencyManagerView extends Application {
         VBox layout = new VBox(10);
         layout.getChildren().addAll(
                 new Label("Entrez les détails de l'utilisateur :"),
-                new HBox(10, new Label("ID Utilisateur :"), userIdField),
                 new HBox(10, new Label("Email :"), emailField),
                 new HBox(10, new Label("Nom Utilisateur :"), userNameField),
                 new HBox(10, new Label("Mot de Passe :"), passwordField),
